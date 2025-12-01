@@ -1,7 +1,4 @@
 ## Excess Return Prediction in the Car Industry - Auto_ml
-![Python](https://img.shields.io/badge/Python-3.10-blue.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
-![Last Update](https://img.shields.io/badge/Updated-Oct_2025-lightgrey.svg)
 
 ### Capstone Project — Data Science & Advanced Programming (HEC Lausanne)
 
