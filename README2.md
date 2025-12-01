@@ -6,7 +6,7 @@
 ### Capstone Project — Data Science & Advanced Programming (HEC Lausanne)
 
 This repository contains the full implementation of my capstone project for the Data Science & Advanced Programming course at HEC Lausanne.  
-The objective is to build a clean, reproducible, and fully automated Python pipeline to test whether technical indicators + machine learning can predict **short-horizon excess returns in the global automobile industry**.
+The objective is to build a clean, reproducible, and fully automated Python pipeline to test whether technical indicators + machine learning can predict **short-horizon excess returns** in the global automotive sector.
 
 ---
 
@@ -16,10 +16,17 @@ The project includes:
 
 - A complete **data engineering pipeline** (Yahoo Finance API + caching system)  
 - **Feature engineering** based solely on past-dependent technical indicators  
-- **Per-ticker Ridge Regression models**  
-- **Single-split** and **Walk-Forward expanding-window** evaluations  
+- **Per-ticker Ridge Regression models** for excess return prediction
+- Two evaluation schemes:
+  - **Single Train–Test Split**  
+  - **Walk-Forward Expanding-Window Validation**
 - A realistic **Top-K long-only trading strategy** with transaction costs  
 - A full **backtesting engine** including turnover computation  
+- Benchmarking against both:
+  - CARZ ETF  
+  - A custom equal-weight automotive index  
+
+This project follows industry-level quantitative research standards.
 
 ---
 
@@ -61,9 +68,9 @@ Chosen for its:
 
 ### Evaluation Metrics
 
-- MSE, MAE, R²  
+- Mean Squared Error (MSE), Mean Absolute Error (MAE), R²  
 - Pearson & Spearman Information Coefficient (IC)  
-- Cumulative performance (equity curve)  
+- Cumulative performance (equity curve) of a Top-K predicted portfolio
 - Turnover diagnostics & transaction-cost-adjusted returns  
 
 ---
