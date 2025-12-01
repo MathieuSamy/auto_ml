@@ -73,24 +73,24 @@ def equity_curve(                               # to backtest a top-k long strat
         net_excess = port_excess - cost                                 # net excess return after cost
 
         # store for debug
-        turnovers.append(turnover)
-        costs.append(cost)
+        turnovers.append(turnover)                                      # store turnover
+        costs.append(cost)                                              # store cost         
 
-        rets.append((dt, net_excess))
-        prev_weights = weights
+        rets.append((dt, net_excess))                                   # store (date, net excess return)   
+        prev_weights = weights                                          # update previous weights      
 
     # Time series of (net) excess returns
-    s = pd.Series({d: r for d, r in rets}).sort_index()
-    s.name = "excess_return_net"
+    s = pd.Series({d: r for d, r in rets}).sort_index()                 # index by date
+    s.name = "excess_return_net"                                        # name the series
 
-    equity = (1 + s).cumprod()
-    equity.name = "equity_excess"
+    equity = (1 + s).cumprod()                                          # cumulative product to get equity curve            
+    equity.name = "equity_excess"                                       # name the equity series          
 
     # ==== DEBUG PRINT ====
-    if transaction_cost_bps != 0 and len(turnovers) > 0:
-        avg_turnover = float(np.mean(turnovers))
-        avg_cost = float(np.mean(costs))
-        total_cost = float(np.sum(costs))
+    if transaction_cost_bps != 0 and len(turnovers) > 0:                # debug print
+        avg_turnover = float(np.mean(turnovers))                        # average turnover
+        avg_cost = float(np.mean(costs))                                # average cost per rebalance       
+        total_cost = float(np.sum(costs))                               # total cost over period
         print(
             f"[COST DEBUG] avg turnover: {avg_turnover:.3f}, "
             f"avg cost per rebalance: {avg_cost:.5f}, "

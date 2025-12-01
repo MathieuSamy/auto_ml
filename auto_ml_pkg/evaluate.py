@@ -8,9 +8,9 @@ def regression_report(y_true: pd.Series, y_pred: pd.Series) -> dict:
     """
     Computes MSE, MAE and R^2 on aligned non-missing pairs of (y_true, y_pred).
     """
-    df = pd.concat([y_true, y_pred], axis=1).dropna()
+    df = pd.concat([y_true, y_pred], axis=1).dropna()                    # align and drop NaNs
     if df.empty:
-        return {"MSE": np.nan, "MAE": np.nan, "R2": np.nan}
+        return {"MSE": np.nan, "MAE": np.nan, "R2": np.nan}              # return NaNs if no data
     return {
         "MSE": float(mean_squared_error(df.iloc[:, 0], df.iloc[:, 1])),
         "MAE": float(mean_absolute_error(df.iloc[:, 0], df.iloc[:, 1])),
