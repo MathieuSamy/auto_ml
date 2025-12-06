@@ -1,5 +1,14 @@
 ## Excess Return Prediction in the Car Industry - Auto_ml
 
+### License
+MIT License — free to use, modify, and distribute.
+
+![Python](https://img.shields.io/badge/Python-3.14.0-blue.svg)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Last Update](https://img.shields.io/badge/Updated-Dec_2025-lightgrey.svg)
+
+--- 
+
 ### Capstone Project — Data Science & Advanced Programming (HEC Lausanne)
 
 This repository contains the full implementation of my capstone project for the Data Science & Advanced Programming course at HEC Lausanne.  
@@ -217,12 +226,4 @@ This project was completed as the final capstone for the
 
 The methodology, code design, walk‑forward evaluation and backtesting adhere to academic standards in quantitative finance research.
 
---- 
-
-### License
-
-MIT License — free to use, modify, and distribute.
-
-![Python](https://img.shields.io/badge/Python-3.10-blue.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
-![Last Update](https://img.shields.io/badge/Updated-Oct_2025-lightgrey.svg)
+Many thanks to Anna Smirnova and Simon Scheidegger for their guidance, support, and excellent teaching throughout this course. 
