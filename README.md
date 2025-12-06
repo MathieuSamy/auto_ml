@@ -146,6 +146,8 @@ auto_ml/
 git clone https://github.com/MathieuSamy/auto_ml.git
 cd auto_ml
 
+# Need python 3.14.0 to support the virtual environnement
+
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
