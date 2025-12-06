@@ -129,9 +129,9 @@ auto_ml/
 │   ├── figures/
 │   └── artifacts/
 │
-├── environment.yml            # asked by the TA to import environment 
+├── main.py                    # Main controller to run all experiments
 ├── README.md
-└── requirements.txt           # What actually import the environment 
+└── requirements.txt           # Import the environment 
 ```
 
 ---
@@ -152,7 +152,15 @@ pip install -r requirements.txt
 
 Choose and run one of the experiments below from the project root.
 
-Single Train–Test Split
+Run the full pipeline through the main entry point:
+
+```bash
+python main.py
+```
+
+To run each experiment independently, you can manually execute:
+
+Single Train–Test Split: 
 
 ```bash
 # Single Train–Test Split
