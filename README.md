@@ -130,6 +130,8 @@ auto_ml/
 │   └── artifacts/
 │
 ├── main.py                    # Main controller to run all experiments
+├── PROPOSAL.md
+├── AI_USAGE.md
 ├── README.md
 └── requirements.txt           # Import the environment 
 ```
