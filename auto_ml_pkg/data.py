@@ -1,4 +1,3 @@
-# src/data.py
 import os
 import time
 from typing import Iterable
@@ -7,9 +6,7 @@ import yfinance as yf
 import sys, os
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
-# ============================================================
 # === Directories for cached and raw CSVs (GLOBAL auto_ml/)
-# ============================================================
 
 # BASE_DIR = folder of this file → auto_ml/auto_ml_pkg
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
