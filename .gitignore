@@ -11,7 +11,7 @@ __pycache__/
 # Jupyter auto-saves
 .ipynb_checkpoints/
 
-# Outputs (NE JAMAIS PUSH)
+# Outputs (NEVER PUSH)
 outputs/
 outputs/*
 figures/
